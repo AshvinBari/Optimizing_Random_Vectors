@@ -58,3 +58,5 @@ plt.title("Vectors After Optimization (Reduced Superposition)")
 plt.grid(True)  
 plt.show()  
 ```
+![Screenshot]("C:\Users\hp\OneDrive\Desktop\B4.png")
+
