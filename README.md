@@ -34,7 +34,7 @@ The optimization is driven by:
 1) Penalizing non-zero off-diagonal values in the dot-product matrix.
 2) Keeping diagonal values close to 1, as they represent the self-dot product of unit vectors.
  
-```
+```python
 for step_num in range(num_steps):  
     optimizer.zero_grad()  
     dot_products = big_matrix @ big_matrix.T  
@@ -48,7 +48,7 @@ for step_num in range(num_steps):
 **Step 4: Visualize Optimized Vectors**
 1) After optimization, the first two components of the vectors are plotted again.
 2) The optimized vectors exhibit reduced overlap, showing a more orthogonal configuration.
-```
+```python
    plt.figure(figsize=(8, 8))  
 for i in range(num_vectors):  
     plt.quiver(0, 0, big_matrix[i, 0].item(), big_matrix[i, 1].item(), angles='xy', scale_units='xy', scale=1, color='r', alpha=0.5)  
